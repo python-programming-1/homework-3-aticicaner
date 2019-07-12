@@ -8,6 +8,8 @@ print("enter a positive integer: ")
 
 try:
     num_input = int(input())
+    if(num_input < 0):
+        print("Positive integers only")
     while(num_input > 1):
         num_input = int(collatz(num_input))
         print(num_input)
